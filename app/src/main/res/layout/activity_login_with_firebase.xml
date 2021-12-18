@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginWithFirebase">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="128dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/unnamed" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Welcome back!"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in to your existing account of Q Allure"
+        android:layout_gravity="center"
+        android:textSize="13dp" />
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:paddingLeft="20sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:hint="Email"
+        android:textColor="#3DBAFE"
+        android:ems="10"
+        android:textSize="14sp"
+        android:inputType="textEmailAddress"
+        android:drawablePadding="12dp"
+        android:drawableStart="@drawable/custom_person_icon"
+        android:background="@drawable/custom_input" />
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="25pt"
+        android:paddingLeft="20sp"
+        android:ems="10"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:hint="Password"
+        android:textSize="14sp"
+        android:drawablePadding="12dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+        android:background="@drawable/custom_input"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:layout_gravity="end"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="80pt"
+        android:layout_height="20pt"
+        android:text="LOG IN"
+        android:layout_gravity="center"
+        android:background="@drawable/customborder"
+        android:backgroundTint="#3C00BF"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or connect using"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+
+<!--        <Button-->
+<!--            android:layout_width="60pt"-->
+<!--            android:layout_height="18pt"-->
+<!--            android:backgroundTint="#FF1744"-->
+<!--            android:text="Google"-->
+<!--            android:textStyle="bold"-->
+<!--            android:background="@drawable/customborder2"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:drawableLeft="@drawable/ic_icons8_google"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textAllCaps="false"/>-->
+    </LinearLayout>
+
+
+
+</LinearLayout>
